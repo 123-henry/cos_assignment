@@ -1,0 +1,55 @@
+#TO CALCULATE VELOCITY
+def a():
+    displacement = (float(input('enter your displacement:')))
+    time = float(input('enter your time:'))
+    velocity = displacement/time
+    print(velocity)
+
+
+#TO CALCULATE FORCE
+def b():
+    mass = float(input('enter your mass:'))
+    acceleration = float(input('enter your acceleration:'))
+    force= mass*acceleration
+    print(force)
+
+#TO CALCULATE WORK DONE
+def c():
+    force = int(input('enter your force:'))
+    distance = float(input('enter your distance:'))
+    work_done = force*distance
+    print(work_done)
+
+#TO SOLVE FOR POTENTIAL DIFFERENCE(P.D)
+def d():
+    current = float(input('enter your current:'))
+    resistance = float(input('enter your resistance:'))
+    potential_difference = (current*resistance)
+    print(potential_difference)
+
+#TO CALCULATE THE density of a body
+def e():
+    mass = float(input('enter your mass:'))
+    volume = float(input('enter your volume:'))
+    density = mass*volume
+    print (density)
+
+
+
+
+def main():
+    user_choice = input('what operation would you like to perform')
+    if user_choice == "a":
+        a()
+    elif user_choice == "b":
+        b()
+    elif user_choice == "c":
+        c()
+    elif user_choice == "d":
+        d()
+    elif user_choice == "e":
+        e()
+    else:
+        print("invalid input")
+if __name__ == '__main__':
+    main()
